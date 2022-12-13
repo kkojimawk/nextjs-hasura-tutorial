@@ -1,0 +1,11 @@
+overwrite: true
+schema: "https://lesson-kkojima.hasura.app/v1/graphql"
+documents: "queries/**/*.ts"
+generates:
+  types/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-apollo-angular"
+      - "typescript-react-apollo"
+      - "typescript-stencil-apollo"
